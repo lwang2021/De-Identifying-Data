@@ -39,7 +39,7 @@ https://www.pdflabs.com/tools/pdftk-server/
 2. Perl
 
 The PC might already have this installed, to check, open bash or a terminal and run the command:
-"perl --version"
+> "perl --version"
 
 If a version number pops up, it is installed. Otherwise, here is the link:
 https://www.perl.org/get.html
