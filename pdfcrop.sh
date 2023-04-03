@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Adapted by: Lawrence Wang
+# Email: wanglawr@usc.edu
+# Taken from https://tex.stackexchange.com/questions/42236/pdfcrop-generates-larger-file
+
 function usage () {
   echo "Usage: `basename $0` [Options] <input.pdf> [<output.pdf>]"
   echo

@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# By: Lawrence Wang
+# Email: wanglawr@usc.edu
+
 IFS=$'\n'
 
 for index in $1

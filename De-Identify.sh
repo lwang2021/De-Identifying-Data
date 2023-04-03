@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# By: Lawrence Wang
+# Email: wanglawr@usc.edu
+
 current=$(pwd)
 
 cp -r "$1" "$current"
