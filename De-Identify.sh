@@ -15,17 +15,15 @@ fi
 
 cd $copy
 
-directories=$(ls -d */)
-
-arrDirectories=$(echo $directories | tr "/  " "\n")
-
-for index in $arrDirectories
+for folder in *
 do
-    cd "$current"/$copy
-    cd $index;
-    xml=$(ls | grep .xml)
-    pdf=$(ls | grep .pdf)
+    if [ -d "$folder" ]; then
+        cd "$folder";
+        xml=$(ls | grep .xml)
+        pdf=$(ls | grep .pdf)
 
-    sh "$current"/editXml.sh "$xml"
-    sh "$current"/editPdf.sh "$pdf" "$current"
+        sh "$current"/editXml.sh "$xml"
+        sh "$current"/editPdf.sh "$pdf" "$current"
+        cd "$current"/"$copy"
+    fi
 done
