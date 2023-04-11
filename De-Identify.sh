@@ -13,7 +13,7 @@ if [[ $directories == *"No such file or directory"* ]]; then
   echo "Error finding folders. Please check the path and try again."
 fi
 
-cd $copy
+cd "$copy"
 
 for folder in *
 do
